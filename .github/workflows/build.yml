@@ -24,10 +24,10 @@ jobs:
           pip install pyinstaller Pillow pymupdf
 
       - name: Build executable
-        run: pyinstaller --onefile compress_pdf.py
+        run: pyinstaller --onefile api_Comp_PDF.py
 
       - name: Upload executable artifact
         uses: actions/upload-artifact@v4
         with:
           name: exe
-          path: dist/compress_pdf.exe
+          path: dist/api_Comp_PDF.exe
