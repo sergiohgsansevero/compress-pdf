@@ -27,7 +27,7 @@ jobs:
         run: pyinstaller --onefile compress_pdf.py
 
       - name: Upload executable artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: exe
           path: dist/compress_pdf.exe
